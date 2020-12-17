@@ -1,4 +1,4 @@
-## $UNI Price - A Chrome Extension
+## Uniswap-Price-Tracker - A Chrome Extension
 Community built price ticker extension for chrome
 
 ### What does it do?
@@ -8,3 +8,6 @@ Community built price ticker extension for chrome
 - Show supply and marketcap
 ```
 "# Uniswap-Price-Tracker" 
+You can download it from google store:
+
+https://chrome.google.com/webstore/detail/uniswap-price-tracker/hhbelcjphnnckoaldnfhdbdpddilaafk/related

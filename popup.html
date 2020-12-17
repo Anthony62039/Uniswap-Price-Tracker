@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Uniswap Price tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <style>
+    	body {
+    		margin: 0;
+    		padding: 0;
+        font-family: 'Varela Round', sans-serif!important;
+    		background: rgb(143,221,236);
+			  background: linear-gradient(195deg, rgba(143,221,236,1) 0%, rgba(148,236,143,1) 100%);
+    		width: 350px;
+    		border-radius: 8px;
+    	}
+    	img {
+    		margin: auto;
+    		margin-top: 2em;
+    		width: 60px;
+    		display: block;
+    	}
+    	h3 {
+    		font-size: 1.2em;
+    		font-weight: 400;
+    		margin: auto;
+    		color: #222;
+    		margin-top: 10px;
+    		text-align: center;
+    	}
+    	.desc {
+    		display: inline-block;
+		    font-weight: 600;
+		    margin-right: 0;
+		    text-align: left;
+		    width: 60%;
+		    color: #444;
+		    margin-bottom: 0px;
+		    margin-top: 0px;
+    	}
+    	.price {
+    		width: 90%;
+		    margin: auto;
+		    overflow: hidden;
+		    margin-top: 2em;
+    	}
+    	.mar {
+    		margin-top: 0.5em;
+		    width: 100%;
+		    display: block;
+    	}
+    	#USD, #ETH, #supply, #staked, #mcap, #trades, #stakepercent {
+    		width: 40%;
+    		display: inline-block;
+    		float: right;
+    		text-align: right;
+    		color: #000;
+    	}
+    	.wrapper {
+    		width: 90%;
+		    box-sizing: border-box;
+		    margin-top: 2em;
+		    background: rgba(255,255,255, .25);
+		    border-radius: 8px;
+		    margin: auto;
+		    margin-top: 1em;
+		    padding: 1em;
+		    padding-bottom: 1.5em;
+		    margin-bottom: 1em;
+    	}
+
+      .btn {
+        font-size: 1em;
+        border-radius: 4px!important;
+        letter-spacing: .05rem;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 1rem;
+        transition: all 0.2s;
+        background: #cdff00!important;
+        border: none!important;
+        width: 10em;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        -webkit-transition: all .15s ease;
+        -o-transition: all .15s ease;
+        transition: all .15s ease;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .btn:hover {
+        -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.2);
+        box-shadow: 0 2px 12px rgba(0,0,0,.2);
+      }
+
+    	.red {
+    		color: rgb(243, 21, 21) !important;
+		}
+		.green {
+    	color: rgb(3, 162, 37) !important;
+		}
+    .buysell {
+      display: block;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      background: rgba(255,255,255,0.4);
+      padding: 10px;
+      margin-top: 1em;
+      border-radius: 100px;
+    }
+    </style>
+  </head>
+  <script src="popup.js"></script>
+  <body>
+
+  <div class="wrapper">
+
+  	<img id="logoticker" src="icon.png"/>
+  	<h3><span id="Contract_ticker_symbol"></span>Uni Price Tracker</h3>
+
+  	<div class="price">
+  		<span class="mar"><p class="desc">USD price:$</p> <span id="USD"><i class="fa fa-spinner fa-spin"></i></span></span>
+  		<span class="mar"><p class="desc">Contract address:</p> <span id="contract_address"><i class="fa fa-spinner fa-spin"></i></span></span>
+      <br/>
+      <!-- <p style="color: #000;font-weight: 500;"><b>Marketcap (USD)</b></p> -->
+      <span class="mar"><p class="desc">Contract name:</p> <span id="contract_name"><i class="fa fa-spinner fa-spin"></i></span></span>
+      <span class="mar"><p class="desc">Contract ticker symbol:</p> <span id="contract_ticker_symbol"></span></span>
+        <span class="mar"><p class="desc">Rank</p> <span id="rank">77</span></span>
+
+      <br/>
+     <!--  <p style="color: #000;font-weight: 500;"><b>Last Trade</b></p>
+      <span class="mar"><p class="desc">Total Trades in 24 Hours:</p> <span id="trades"><i class="fa fa-spinner fa-spin"></i></span></span> -->
+<!--       <span class="mar"><p id="buysell" class="desc buysell"><span id="type"></span> <span id="rank"><i class="fa fa-spinner fa-spin"></i></span></p></span>
+      <br/> -->
+      <a href="" id="uniswaplink" target="_blank" class="btn">Trade <span id="Contract_ticker_symbol"></span></a>
+
+      
+      <p style="color: #000;font-weight: 500;"></p>
+            <a href="https://www.covalenthq.com/" id="linke" target="_blank" >Powered by Covalent </a>
+
+ <!--  		<span class="mar"><p class="desc">Currently Staked:</p> <span id="staked">---</span></span>
+  		<span class="mar"><p class="desc">Staked %:</p> <span id="stakepercent">---</span></span> -->
+      
+  	</div>
+
+  </div>
+
+</body>
+</html>
+
